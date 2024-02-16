@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+#logo {
+    width: 300;
+}
+
+/* header.css */
+
+header {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+    margin: auto;
+}
+
+#nav {
+    width: 500px;
+    list-style-type: none;
+    margin: 25px auto;
+    padding: 0;
+}
+
+#nav li {
+    text-transform: uppercase;
+    display: inline;
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+
+li:hover {
+    opacity: 0.5;
+}
+
+#nav li:not(:last-child)::after {
+    content: " / ";
+    margin-left: 5px;
+}
+
+#nav a {
+    color: white; /* Links color */
+    text-decoration: none; /* Delete underline */
+}
